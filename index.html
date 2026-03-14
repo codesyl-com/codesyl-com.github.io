@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codesyl &mdash; Websites &amp; Mobile Apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Code<span>syl</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Est. 2024 &bull; Trusted by startups</div>
+        <h1 class="hero-headline">
+          Building Modern<br />
+          <span class="gradient-text">Websites &amp; Apps</span><br />
+          for Growing Businesses
+        </h1>
+        <p class="hero-sub">
+          Codesyl is a modern software development studio specializing in high-quality websites and cross-platform mobile apps that help
+          startups and businesses grow with confidence.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
+          <a href="#portfolio" class="btn btn-outline btn-lg">View Portfolio</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects Delivered</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Happy Clients</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2yr+</span><span class="stat-label">Studio Experience</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <div class="card-topbar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="card-tab active">App.jsx</span>
+            <span class="card-tab">main.dart</span>
+          </div>
+          <div class="code-block">
+            <div class="code-line"><span class="kw">const</span> <span class="fn">App</span> = () <span class="op">=&gt;</span> {</div>
+            <div class="code-line indent"><span class="kw">return</span> (</div>
+            <div class="code-line indent2"><span class="tag">&lt;div</span> <span class="attr">className</span>=<span class="str">"app"</span><span class="tag">&gt;</span></div>
+            <div class="code-line indent3"><span class="tag">&lt;Hero</span> <span class="attr">title</span>=<span class="str">"Codesyl"</span> <span class="tag">/&gt;</span></div>
+            <div class="code-line indent3"><span class="tag">&lt;Services</span> <span class="tag">/&gt;</span></div>
+            <div class="code-line indent2"><span class="tag">&lt;/div&gt;</span></div>
+            <div class="code-line indent">);</div>
+            <div class="code-line">};</div>
+            <div class="code-cursor"></div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-card-phone">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-statusbar"></div>
+              <div class="phone-ui">
+                <div class="phone-header-bar"></div>
+                <div class="phone-card-row">
+                  <div class="phone-mini-card c1"></div>
+                  <div class="phone-mini-card c2"></div>
+                </div>
+                <div class="phone-list-item"></div>
+                <div class="phone-list-item short"></div>
+                <div class="phone-list-item"></div>
+                <div class="phone-btn-row">
+                  <div class="phone-btn-fake"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pill pill-flutter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13.5 2L3 14h7l-2 8 13-12h-7l3-8z" fill="#06B6D4"/></svg>
+          Flutter
+        </div>
+        <div class="hero-pill pill-react">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.5" fill="#22C55E"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#22C55E" stroke-width="1.5" fill="none"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#22C55E" stroke-width="1.5" fill="none" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#22C55E" stroke-width="1.5" fill="none" transform="rotate(120 12 12)"/></svg>
+          React
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">A Modern Studio for Digital Products</h2>
+        <p class="section-desc">
+          Codesyl helps startups, entrepreneurs, and businesses transform ideas into reliable software products with clean design and
+          scalable engineering.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Who We Are</h3>
+          <p>
+            Codesyl is a modern software development studio specializing in building high-quality websites and cross-platform mobile
+            applications that are fast, secure, and easy to scale.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Our Mission</h3>
+          <p>
+            To empower businesses with modern digital solutions by delivering high-quality websites and mobile applications that drive
+            growth and innovation.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Our Vision</h3>
+          <p>
+            To become a trusted technology partner for startups and businesses worldwide by delivering scalable and reliable software
+            solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-desc">Two core disciplines. One focused team. Full-cycle delivery.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal">
+          <div class="service-icon-wrap web-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Website Development</h3>
+          <p class="service-desc">
+            We build modern, responsive, and high-performance websites tailored to business needs.
+          </p>
+          <ul class="service-features">
+            <li><span class="check">&check;</span> Business websites</li>
+            <li><span class="check">&check;</span> Landing pages</li>
+            <li><span class="check">&check;</span> Custom web applications</li>
+            <li><span class="check">&check;</span> E-commerce websites</li>
+            <li><span class="check">&check;</span> Website redesign and optimization</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's build yours <span>&rarr;</span></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card service-card-accent reveal">
+          <div class="service-icon-wrap flutter-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Mobile App Development</h3>
+          <p class="service-desc">
+            We develop cross-platform mobile applications using Flutter that run smoothly on both Android and iOS.
+          </p>
+          <ul class="service-features">
+            <li><span class="check">&check;</span> Android &amp; iOS mobile apps</li>
+            <li><span class="check">&check;</span> Startup MVP apps</li>
+            <li><span class="check">&check;</span> Business productivity apps</li>
+            <li><span class="check">&check;</span> API integrations</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's build yours <span>&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US SECTION
+  ============================================================ -->
+  <section class="why section-pad" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose Codesyl</h2>
+        <p class="section-desc">We combine technical excellence with a client-focused delivery process.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          </div>
+          <h4>Modern Technology</h4>
+          <p>We use modern development tools and frameworks to build scalable digital products.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>Clean &amp; Scalable Code</h4>
+          <p>We focus on writing maintainable and well-structured code.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h4>Client-Focused Development</h4>
+          <p>We work closely with clients to ensure the final product meets their goals.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Performance &amp; Reliability</h4>
+          <p>Our applications are optimized for speed, performance, and stability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO SECTION
+  ============================================================ -->
+  <section class="portfolio section-pad" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-desc">A snapshot of example work across web and mobile experiences.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img portfolio-img-1">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Restaurant Website</h4>
+            <p>A restaurant website with online reservations, menu highlights, and brand storytelling.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img portfolio-img-2">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Web App</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Real Estate Platform</h4>
+            <p>A real estate platform with listing search, filters, and agent dashboards.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img portfolio-img-3">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Mobile</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Mobile App UI</h4>
+            <p>A clean mobile app UI showcasing product discovery and fast checkout flows.</p>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img portfolio-img-4">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Dashboard</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Business Dashboard</h4>
+            <p>A business dashboard with real-time analytics and role-based access control.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS SECTION
+  ============================================================ -->
+  <section class="process section-pad" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Development Process</h2>
+        <p class="section-desc">A clear, reliable workflow that keeps projects on track.</p>
+      </div>
+
+      <div class="process-track">
+        <div class="process-line"></div>
+
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h4>Requirement Analysis</h4>
+          <p>We analyze goals, users, and constraints to define the right scope.</p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h4>Planning &amp; Design</h4>
+          <p>We map the architecture and create clean, user-friendly designs.</p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h4>Development</h4>
+          <p>We build with clean code, best practices, and modern stacks.</p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4>Testing</h4>
+          <p>We test across devices, browsers, and edge cases.</p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-num">05</div>
+          <div class="step-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h4>Deployment &amp; Support</h4>
+          <p>Smooth launch and ongoing support to keep your product thriving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CALL TO ACTION SECTION
+  ============================================================ -->
+  <section class="cta-section">
+    <div class="cta-orb"></div>
+    <div class="container cta-inner">
+      <p class="cta-eyebrow">Ready to build something great?</p>
+      <h2 class="cta-title">Have an idea for a website<br />or mobile app?</h2>
+      <p class="cta-sub">Let's turn your vision into reality. Our team is ready to help.</p>
+      <a href="#contact" class="btn btn-white btn-lg">Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Talk</h2>
+        <p class="section-desc">Drop us a message and we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info reveal">
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:azharhamim80@gmail.com">azharhamim80@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M7 9h10M7 13h6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/demo-profile" target="_blank" rel="noopener">linkedin.com/in/demo-profile</a>
+            </div>
+          </div>
+
+          <div class="contact-tagline">
+            <p>"We do not just write code &mdash; we craft digital experiences."</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="mailto:azharhamim80@gmail.com" method="GET" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">Code<span>syl</span></a>
+        <p>Codesyl is a software development studio specializing in modern websites and mobile applications.</p>
+        <div class="social-links">
+          <!-- Social icon placeholders -->
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.5 9 4-.9-4.2 4-6.5 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/demo-profile" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5>Navigation</h5>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-nav">
+        <h5>Contact</h5>
+        <a href="mailto:azharhamim80@gmail.com">azharhamim80@gmail.com</a>
+        <a href="https://www.linkedin.com/in/demo-profile" target="_blank" rel="noopener">LinkedIn Profile</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Codesyl. All rights reserved.</p>
+        <p>Made with &hearts; for great ideas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
