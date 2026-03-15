@@ -46,26 +46,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealEls.forEach(el => revealObserver.observe(el));
 
-  /* ---- Contact Form ---- */
-  const form     = document.getElementById('contactForm');
-  const formNote = document.getElementById('formNote');
+  /* ---- Hero rotating word ---- */
+  const rotatingWord = document.getElementById('rotatingWord');
+  if (rotatingWord) {
+    const words = ['Website', 'Software', 'Design'];
+    let idx = 0;
+    const transitionDuration = 550;
+    const holdDuration = 1800;
+    const cycleDuration = transitionDuration + holdDuration;
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const name = form.querySelector('#name')?.value?.trim() || '';
-      const email = form.querySelector('#email')?.value?.trim() || '';
-      const message = form.querySelector('#message')?.value?.trim() || '';
-
-      const subject = encodeURIComponent('New Project Inquiry - Codesyl');
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-      );
-
-      const mailto = `mailto:azharhamim80@gmail.com?subject=${subject}&body=${body}`;
-      window.location.href = mailto;
-    });
+    setInterval(() => {
+      rotatingWord.classList.add('exit-left');
+      setTimeout(() => {
+        idx = (idx + 1) % words.length;
+        rotatingWord.textContent = words[idx];
+        rotatingWord.classList.remove('exit-left');
+        rotatingWord.classList.add('enter-right');
+        setTimeout(() => {
+          rotatingWord.classList.remove('enter-right');
+        }, transitionDuration);
+      }, transitionDuration);
+    }, cycleDuration);
   }
 
   /* ---- Smooth Scroll for anchor links ---- */

@@ -99,13 +99,16 @@ ul { list-style: none; }
 
 .btn-outline {
   background: transparent;
-  color: var(--text);
-  border-color: var(--dark-3);
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-2px);
 }
 .btn-outline:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--white);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79,70,229,0.35);
 }
 
 .btn-white {
@@ -290,6 +293,42 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 24px;
   letter-spacing: -0.03em;
+}
+
+.rotating-group {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0 6px;
+}
+
+.rotating-word {
+  display: inline-block;
+  min-width: 8ch;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateX(0);
+}
+
+.rotating-word.exit-left {
+  animation: word-exit-left 0.55s ease forwards;
+}
+
+.rotating-word.enter-right {
+  animation: word-enter-right 0.55s ease forwards;
+}
+
+@keyframes word-enter-right {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes word-exit-left {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-24px); }
 }
 
 .hero-sub {
@@ -721,11 +760,20 @@ ul { list-style: none; }
 .portfolio-img-4::before {
   content: 'DASHBOARD';
 }
+.portfolio-img-5 {
+  background: url('Assets/ogg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-img-5::before {
+  content: 'WEAVERS';
+}
 
 .portfolio-img-1::before,
 .portfolio-img-2::before,
 .portfolio-img-3::before,
-.portfolio-img-4::before {
+.portfolio-img-4::before,
+.portfolio-img-5::before {
   position: absolute;
   font-family: 'Syne', sans-serif;
   font-size: 1.05rem;
