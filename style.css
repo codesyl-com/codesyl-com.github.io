@@ -761,9 +761,7 @@ ul { list-style: none; }
   content: 'DASHBOARD';
 }
 .portfolio-img-5 {
-  background: url('https://github.com/codesyl-com/codesyl-com.github.io/blob/main/Assets/ogg.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #0f172a;
 }
 .portfolio-img-5::before {
   content: 'WEAVERS';
@@ -782,6 +780,12 @@ ul { list-style: none; }
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
   color: rgba(255,255,255,0.45);
+}
+
+.portfolio-img-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Decorative overlay grid on portfolio images */
