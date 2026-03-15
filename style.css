@@ -761,7 +761,7 @@ ul { list-style: none; }
   content: 'DASHBOARD';
 }
 .portfolio-img-5 {
-  background: url('Assets/ogg.jpg');
+  background: url('https://github.com/codesyl-com/codesyl-com.github.io/blob/main/Assets/ogg.jpg');
   background-size: cover;
   background-position: center;
 }
