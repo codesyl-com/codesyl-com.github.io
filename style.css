@@ -322,6 +322,10 @@ ul { list-style: none; }
   margin-bottom: 24px;
   letter-spacing: -0.03em;
 }
+.hero-nowrap {
+  white-space: nowrap;
+  display: inline-block;
+}
 
 .rotating-group {
   display: inline-flex;
