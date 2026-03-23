@@ -1,9 +1,9 @@
-/* ============================================================
+/* 
    CODESYL - style.css
    Aesthetic: Sharp editorial x dark-tech with indigo accents
-============================================================ */
+ */
 
-/* ---- CSS Variables ---- */
+/*  CSS Variables  */
 :root {
   --primary:    #2563EB;
   --primary-light: #60A5FA;
@@ -29,7 +29,7 @@
   --transition: 0.28s cubic-bezier(0.4,0,0.2,1);
 }
 
-/* ---- Reset & Base ---- */
+/*  Reset & Base  */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -62,7 +62,7 @@ ul { list-style: none; }
 
 .section-pad { padding: 100px 0; }
 
-/* ---- Gradient Text ---- */
+/*  Gradient Text  */
 .gradient-text {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   -webkit-background-clip: text;
@@ -70,9 +70,7 @@ ul { list-style: none; }
   background-clip: text;
 }
 
-/* ============================================================
-   BUTTONS
-============================================================ */
+/* BUTTONS */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -128,9 +126,7 @@ ul { list-style: none; }
 .btn-lg { padding: 15px 32px; font-size: 1rem; }
 .btn-full { width: 100%; justify-content: center; }
 
-/* ============================================================
-   SECTION HEADERS
-============================================================ */
+/* SECTION HEADERS */
 .section-header {
   text-align: center;
   margin-bottom: 64px;
@@ -149,9 +145,7 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
-/* ============================================================
-   NAVBAR
-============================================================ */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -225,9 +219,7 @@ ul { list-style: none; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ============================================================
-   HERO SECTION
-============================================================ */
+/* HERO SECTION */
 .hero {
   position: relative;
   padding: 160px 0 100px;
@@ -397,7 +389,7 @@ ul { list-style: none; }
 .stat-label { font-size: 0.78rem; color: var(--text-muted); }
 .stat-divider { width: 1px; height: 40px; background: var(--border-blue); }
 
-/* ---- Hero Visual ---- */
+/*  Hero Visual  */
 .hero-visual {
   position: relative;
   display: flex;
@@ -547,9 +539,7 @@ ul { list-style: none; }
   50%      { opacity: 0; }
 }
 
-/* ============================================================
-   ABOUT SECTION
-============================================================ */
+/* ABOUT SECTION */
 .about { background: var(--white); }
 
 .about-grid {
@@ -582,9 +572,7 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-/* ============================================================
-   SERVICES SECTION
-============================================================ */
+/* SERVICES SECTION */
 .services { background: var(--white); }
 
 .services-grid {
@@ -690,9 +678,7 @@ ul { list-style: none; }
 .service-link span { transition: transform var(--transition); }
 .service-link:hover span { transform: translateX(4px); }
 
-/* ============================================================
-   WHY CHOOSE US
-============================================================ */
+/* WHY CHOOSE US */
 .why { background: var(--white); }
 
 .why-grid {
@@ -744,9 +730,7 @@ ul { list-style: none; }
   line-height: 1.65;
 }
 
-/* ============================================================
-   PORTFOLIO SECTION
-============================================================ */
+/* PORTFOLIO SECTION */
 .portfolio { background: var(--white); }
 
 .portfolio-grid {
@@ -867,9 +851,7 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
-/* ============================================================
-   PROCESS SECTION
-============================================================ */
+/* PROCESS SECTION */
 .process { background: var(--white); }
 
 .process-track {
@@ -937,9 +919,7 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
-/* ============================================================
-   CTA SECTION
-============================================================ */
+/* CTA SECTION */
 .cta-section {
   background: var(--white);
   padding: 100px 0;
@@ -982,9 +962,7 @@ ul { list-style: none; }
   margin-bottom: 40px;
 }
 
-/* ============================================================
-   CONTACT SECTION
-============================================================ */
+/* CONTACT SECTION */
 .contact { background: var(--white); }
 
 .contact-wrap {
@@ -1100,9 +1078,7 @@ ul { list-style: none; }
   color: var(--accent-green);
 }
 
-/* ============================================================
-   FOOTER
-============================================================ */
+/* FOOTER */
 .footer {
   background: var(--dark);
   color: rgba(255,255,255,0.7);
@@ -1176,9 +1152,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.3);
 }
 
-/* ============================================================
-   REVEAL ANIMATION
-============================================================ */
+/* REVEAL ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -1189,9 +1163,7 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
-/* ============================================================
-   RESPONSIVE
-============================================================ */
+/* RESPONSIVE */
 
 /* Tablet */
 @media (max-width: 1024px) {
